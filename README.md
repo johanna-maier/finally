@@ -57,6 +57,23 @@ finally/
 └── scripts/     # Start/stop helpers
 ```
 
+## Upstream sync
+
+This is a personal copy of the course capstone. Two remotes:
+
+- `origin` → `johanna-maier/finally` (this repo — your work lands here)
+- `upstream` → `ed-donner/finally` (course source — fetch-only, for updates)
+
+Pull course updates into your copy:
+
+```bash
+git fetch upstream
+git merge upstream/main      # or: git rebase upstream/main
+```
+
+`git push` / `git pull` default to `origin`; `upstream` is only for receiving updates.
+If the remotes ever look wrong, check with `git remote -v`.
+
 ## License
 
 See [LICENSE](LICENSE).
